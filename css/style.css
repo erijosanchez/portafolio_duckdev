@@ -36,8 +36,10 @@ body {
 }
 
 .container-h {
-    justify-content: center; /* centra horizontalmente */
-    align-items: center; /* centra verticalmente */
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
     display: flex;
 }
 
@@ -96,7 +98,7 @@ body {
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 10%;
 }
 
@@ -114,8 +116,10 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 80px;
-    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.95)),
-        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') center/cover;
+    background: linear-gradient(135deg,
+            #0b0b0b9e 0%,
+            #1a12057a 40%,
+            #ff9e4396 100%);
 }
 
 .hero-content {
@@ -172,7 +176,7 @@ body {
     }
 
     50% {
-        transform: rotate(calc(var(--angle) + 180deg)) translateX(200px) rotate(calc(-1 * (var(--angle) + 180deg)));
+        transform: rotate(calc(var(--angle) + 180deg)) translateX(300px) rotate(calc(-1 * (var(--angle) + 180deg)));
     }
 
     100% {
@@ -457,4 +461,3 @@ body {
 .footer-links a:hover {
     color: var(--secondary);
 }
-
