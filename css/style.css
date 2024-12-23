@@ -117,9 +117,9 @@ body {
     justify-content: center;
     padding-top: 80px;
     background: linear-gradient(135deg,
-            #0b0b0b9e 0%,
-            #1a12057a 40%,
-            #ff9e4396 100%);
+    #ff9e4396 0%,
+    #1a1205a7 40%,
+    #0b0b0b9e 100%);
 }
 
 .hero-content {

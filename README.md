@@ -1,0 +1,1 @@
+page is => https://erijosanchez.github.io/portafolio_duckdev/
