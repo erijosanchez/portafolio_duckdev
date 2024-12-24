@@ -26,13 +26,16 @@ body {
     color: white;
     padding: 0.8rem 0;
     position: fixed;
-    width: 80%;
+    width: 1200px; /* Tamaño fijo */
+    max-width: 90%;
     border-radius: 15px;
     top: 2rem;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.056);
     transition: background 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .container-h {
