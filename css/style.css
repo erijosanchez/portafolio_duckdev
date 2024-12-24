@@ -243,7 +243,7 @@ body {
 }
 
 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 2.5rem;
     color: #cecece;
     line-height: 1.6;
@@ -269,15 +269,50 @@ body {
 /*END ININICIO*/
 
 .section {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.9));
 }
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+
+  .custom-shape-divider-top .shape-fill {
+    fill: #4b45cc; /* Color del fondo de la siguiente sección */
+  }
+
+.hab {
+    background: linear-gradient(135deg,
+            #0b0b0b9e 0%,
+            #1a1205a7 40%,
+            #ff9e4396 100%);
+}
+
+.cont {
+    background: linear-gradient(135deg,
+            #0b0b0b9e 0%,
+            #1a1205a7 40%,
+            #ff9e4396 100%);
+}
+
 
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .skills-grid {
@@ -448,7 +483,6 @@ body {
 .footer {
     background: rgba(26, 26, 26, 0.95);
     padding: 2rem 0;
-    margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
