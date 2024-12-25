@@ -116,11 +116,11 @@ body {
 }
 
 .hero {
-    min-height: 100vh;
+    min-height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 0;
     background: linear-gradient(135deg,
             #ff9e4396 0%,
             #1a1205a7 40%,
@@ -269,29 +269,58 @@ body {
 /*END ININICIO*/
 
 .section {
-    padding: 6rem 0;
+    padding: 7rem 0;
     background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.9));
 }
 
+.sobreM{
+    margin-top: -5.5rem;
+}
+
+/* hondas hacia arriba*/
 .custom-shape-divider-top {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: -5.5rem;
+    z-index: 9;
+    background: #00d0ff00;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
-  }
+    transform: rotate(180deg);
+}
 
-  .custom-shape-divider-top svg {
+.custom-shape-divider-top svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
-  }
+    height: 90px;
+}
 
-  .custom-shape-divider-top .shape-fill {
-    fill: #4b45cc; /* Color del fondo de la siguiente sección */
-  }
+.custom-shape-divider-top .shape-fill {
+    fill: rgba(18, 18, 18, 0.871);
+    /* Color del fondo de la siguiente sección */
+}
+
+/*Hondas hacia abajo*/
+.custom-shape-divider-bottom {
+    position: relative;
+    top: 5.6rem;
+    z-index: 9;
+    background: #00d0ff00;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: rgba(18, 18, 18, 1);
+    /* Color del fondo de la siguiente sección */
+}
 
 .hab {
     background: linear-gradient(135deg,
