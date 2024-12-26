@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portafolio - Privacidad</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/duckDevlogo-removebg-preview.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Estyles-->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="scroll-progress"></div>
+
+    <div class="container-h">
+        <header class="header">
+            <div class="container nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <h1>Erick José Sanchez Pinedo</h1>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre M&#xed;</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="hero">
+        <div class="animate hero-content">
+            <div class="hero-text">
+                <h1>Desarrollador Web <span class="neon-text">Full Stack</span></h1>
+                <p>Desarrollador web apasionado con experiencia en la creación de aplicaciones web modernas y soluciones
+                    digitales innovadoras. Especializado en tecnologías frontend y backend para crear experiencias de
+                    usuario excepcionales.</p>
+                <a href="#contacto" class="btn">Contáctame</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-img">
+                    <img src="images/2pofe.jpg" alt="Erick Sanchez">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="custom-shape-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="shape-fill"
+                d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39 99.94 19.52 182.83 60.48 261.82 81.31 70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z">
+            </path>
+        </svg>
+    </div>
+
+    <section id="sobre-mi" class="section sobreM">
+        <div class="animate container">
+            <h2 class="section-title">Sobre M&#xed;</h2>
+            <p>Soy un apasionado de la tecnología y la innovación, con experiencia en programación, redes,
+                telecomunicaciones y soporte técnico de nivel 1. Me encanta trabajar con diferentes tecnologías y
+                explorar nuevas herramientas y metodologías que no solo impulsan mi crecimiento profesional, sino que
+                también aportan valor a cada proyecto en el que colaboro. Además, ¡soy un auténtico amante de PHP!
+                <br>
+                <br>
+                Cuento con habilidades destacadas en comunicación y trabajo en equipo, donde fomento el diálogo abierto,
+                la discusión constructiva, y la colaboración efectiva. Valoro profundamente las ideas de los demás y
+                trabajo para integrarlas en soluciones prácticas e innovadoras.
+                <br>
+                <br>
+                Además, tengo experiencia trabajando con metodologías ágiles, lo que me permite adaptarme rápidamente a
+                entornos cambiantes y gestionar proyectos de manera eficiente. Mi enfoque está orientado hacia la mejora
+                continua y la creación de resultados excepcionales a través de un trabajo colaborativo y comprometido.
+            </p>
+        </div>
+    </section>
+
+    <div class="custom-shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="shape-fill"
+                d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39 99.94 19.52 182.83 60.48 261.82 81.31 70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z">
+            </path>
+        </svg>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    &copy; <span id="current-year"></span> Mi Portafolio. Todos los derechos reservados.
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Política de Privacidad</a>
+                    <a href="use.html">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#00d2ff'
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00d2ff',
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+
+    </script>
+</body>
+
+</html>
+
+</html>
