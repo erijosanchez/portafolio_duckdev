@@ -91,3 +91,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000);
     });
 });
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CLASE ACTIVE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleccionar todas las secciones y enlaces de navegación
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // Función para actualizar el enlace activo
+    function updateActiveLink() {
+        const scrollPosition = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100; // Ajusta este valor según tu header
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            // Verificar si la sección está en el viewport
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                // Remover la clase active de todos los enlaces
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Agregar evento scroll
+    window.addEventListener('scroll', updateActiveLink);
+
+    updateActiveLink();
+
+    // Manejar el clic en los enlaces de navegación
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+/**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END ACTIVE CLASS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
