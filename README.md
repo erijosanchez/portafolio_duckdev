@@ -1,6 +1,6 @@
 PORTAFOLIO PERSONAL --
 
-INLUYE -> INICO
+INCLUYE -> INICO
        -> SOBRE MI
        -> SKILLS 
        -> PROYECTOS
