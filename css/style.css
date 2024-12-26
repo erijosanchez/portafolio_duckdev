@@ -394,6 +394,11 @@ body {
     transform: scale(1.2);
 }
 
+.skill-card i>img{
+    width: 45px;
+    border-radius: 3px;
+}
+
 /* Estilos del contenedor del carrusel */
 .skills-carousel {
     position: relative;
