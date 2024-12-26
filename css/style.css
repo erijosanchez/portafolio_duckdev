@@ -378,6 +378,8 @@ body {
     transform: scale(1.2);
 }
 
+/*Proyectos styles*/
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -407,6 +409,12 @@ body {
 .project-content {
     padding: 1.5rem;
 }
+
+.project-content p {
+    padding-bottom: 2rem;
+}
+
+/*end project styles*/
 
 .contact-form {
     max-width: 600px;
