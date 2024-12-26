@@ -287,7 +287,7 @@ body {
     background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.9));
 }
 
-.sobreM{
+.sobreM {
     margin-top: -5.5rem;
 }
 
@@ -341,6 +341,7 @@ body {
             #0b0b0b9e 0%,
             #1a1205a7 40%,
             #ff9e4396 100%);
+    padding: 15rem 0;
 }
 
 .cont {
@@ -353,9 +354,12 @@ body {
 
 .section-title {
     text-align: center;
-    margin-bottom: 3rem;
-    color: white;
-    font-size: 1.8rem;
+    margin-bottom: 3.3rem;
+    font-size: 2.2rem;
+    background: linear-gradient(90deg, #8fdbec, #0060e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /*/////////////////////////SKILLS STYLES /////////////////////////////////////////////*/
@@ -394,9 +398,13 @@ body {
     transform: scale(1.2);
 }
 
-.skill-card i>img{
+.skill-card i>img {
     width: 45px;
     border-radius: 3px;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
 }
 
 /* Estilos del contenedor del carrusel */
@@ -421,20 +429,18 @@ body {
 
 .skills-carousel::before {
     left: 0;
-    background: linear-gradient(to right, 
-        #0b0802b2 0%,
-        #130e0493 40%,
-        transparent 100%
-    );
+    background: linear-gradient(to right,
+            #0b0802b2 0%,
+            #130e0493 40%,
+            transparent 100%);
 }
 
 .skills-carousel::after {
     right: 0;
-    background: linear-gradient(to left, 
-        #6d441caa 0%,
-        #66401b99 40%,
-        transparent 100%
-    );
+    background: linear-gradient(to left,
+            #6d441caa 0%,
+            #66401b99 40%,
+            transparent 100%);
 }
 
 .skills-track {
@@ -448,7 +454,8 @@ body {
 }
 
 .skill-card {
-    flex: 0 0 250px; /* Ancho fijo para cada tarjeta */
+    flex: 0 0 250px;
+    /* Ancho fijo para cada tarjeta */
     margin: 0 15px;
     background: rgba(255, 255, 255, 0.05);
     padding: 2rem;
@@ -470,8 +477,10 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(calc(-250px * 44)); /* La mitad del ancho total */
+        transform: translateX(calc(-250px * 44));
+        /* La mitad del ancho total */
     }
 }
 
@@ -493,6 +502,7 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 1rem;
 }
 
 .project-card:hover {
