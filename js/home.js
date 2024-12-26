@@ -43,12 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleScroll);
 });
 
-window.addEventListener('scroll', () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.querySelector('.scroll-progress').style.width = scrolled + '%';
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     const profileContainer = document.querySelector('.profile-container');
