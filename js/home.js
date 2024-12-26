@@ -143,4 +143,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const track = document.querySelector('.skills-track');
+const cards = [...document.querySelectorAll('.skill-card')];
+
+const clones = Array.from({ length: 10 }, () => cards.map(card => card.cloneNode(true)))
+                    .flat();
+
+// Agrega las tarjetas clonadas al contenedor
+track.append(...clones);
+
+// Ajusta dinámicamente el ancho del contenedor
+const totalCards = cards.length * 11;
+track.style.width = `${250 * totalCards}px`; // Ancho dinámico basado en 250px por tarjeta
+
+
+
 /**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END ACTIVE CLASS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

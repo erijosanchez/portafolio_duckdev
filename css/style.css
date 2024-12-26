@@ -434,8 +434,7 @@ body {
 
 .skills-track {
     display: flex;
-    width: calc(250px * 8); /* Ancho total de todas las tarjetas */
-    animation: scroll 15s linear infinite;
+    animation: scroll 70s linear infinite;
     will-change: transform;
 }
 
@@ -443,7 +442,6 @@ body {
     animation-play-state: paused;
 }
 
-/* Modificar los estilos de las tarjetas para el carrusel */
 .skill-card {
     flex: 0 0 250px; /* Ancho fijo para cada tarjeta */
     margin: 0 15px;
@@ -468,7 +466,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 4)); /* La mitad del ancho total */
+        transform: translateX(calc(-250px * 44)); /* La mitad del ancho total */
     }
 }
 
