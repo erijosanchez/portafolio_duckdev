@@ -74,9 +74,6 @@
 
     .hero-text h1 {
         font-size: 2rem;
-        white-space: normal;
-        border-right: none;
-        animation: none;
     }
 
     .mobile-menu-btn {
@@ -179,6 +176,10 @@
         padding: 4rem 0;
     }
 
+    .header {
+        top: 1rem;
+    }
+
     .nav-links {
         width: 100%;
     }
@@ -193,12 +194,40 @@
 
     /* Hero Section */
     .hero-text h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        text-align:justify;
     }
 
     .profile-container {
-        margin-top: 7.8rem;
-        margin-bottom: 1.5rem;   
+        padding-top: 14rem;
+        padding-bottom: 10rem;  
+    }
+
+    @keyframes orbitAnimation {
+        from {
+            transform: rotate(var(--angle)) translateX(130px) rotate(calc(-1 * var(--angle)));
+        }
+    
+        to {
+            transform: rotate(calc(var(--angle) + 360deg)) translateX(130px) rotate(calc(-1 * (var(--angle) + 360deg)));
+        }
+    }
+
+    @keyframes scatterAnimation {
+        0% {
+            transform: rotate(var(--angle)) translateX(130px) rotate(calc(-1 * var(--angle)));
+        }
+    
+        50% {
+            transform: rotate(calc(var(--angle) + 180deg)) translateX(180px) rotate(calc(-1 * (var(--angle) + 180deg)));
+        }
+    
+        100% {
+            transform: rotate(calc(var(--angle) + 360deg)) translateX(130px) rotate(calc(-1 * (var(--angle) + 360deg)));
+        }
     }
 
     .hero-text p {

@@ -32,7 +32,6 @@ body {
     padding: 0.8rem 0;
     position: fixed;
     width: 1200px;
-    /* Tamaño fijo */
     max-width: 90%;
     border-radius: 15px;
     top: 2rem;
@@ -46,9 +45,7 @@ body {
 
 .container-h {
     justify-content: center;
-    /* centra horizontalmente */
     align-items: center;
-    /* centra verticalmente */
     display: flex;
 }
 
