@@ -213,7 +213,7 @@
     <section id="contacto" class="cont section">
         <div class="animate container">
             <h2 class="section-title">Contacto</h2>
-            <form class="contact-form" action="https://formspree.io/f/mzzzkedd" method="post" >
+            <form class="contact-form" action="https://formspree.io/f/mzzzkedd" method="POST">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -228,9 +228,16 @@
                 </div>
                 <button type="submit" class="btn">Enviar Mensaje</button>
             </form>
+            <!-- Mensaje de agradecimiento (inicialmente oculto) -->
+            <div class="thank-you-message" style="display: none;">
+                <h3>¡Gracias por tu mensaje!</h3>
+                <p>Me pondré en contacto contigo pronto. 🤝🤝</p>
+                <button class="btn" onclick="resetForm()">Enviar otro mensaje</button>
+            </div>
             <div class="social-links">
                 <a href="https://github.com/erijosanchez"><i class="fa-github fab"></i></a>
-                <a href="www.linkedin.com/in/erick-josé-sánchez-pinedo-5719802a6"><i class="fa-linkedin fab"></i></a>
+                <a href="https://linkedin.com/in/erick-josé-sánchez-pinedo-5719802a6"><i
+                        class="fa-linkedin fab"></i></a>
             </div>
         </div>
     </section>
@@ -240,6 +247,10 @@
             <div class="footer-content">
                 <div class="footer-text">
                     &copy; <span id="current-year"></span> DUCKDEV. Todos los derechos reservados.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
                 </div>
             </div>
         </div>

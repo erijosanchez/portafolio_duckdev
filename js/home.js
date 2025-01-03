@@ -22,11 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.section').forEach(section => {
         observer.observe(section);
     });
-    document.querySelector('.contact-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-        this.reset();
-    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -153,3 +148,42 @@ track.style.width = `${250 * totalCards}px`; // Ancho dinámico basado en 250px 
 
 
 /**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END ACTIVE CLASS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+//notificacion
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+    const thankYouMessage = document.querySelector('.thank-you-message');
+
+    function showThankYouMessage() {
+        form.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+    }
+
+    window.resetForm = function() {
+        form.reset();
+        form.style.display = 'block';
+        thankYouMessage.style.display = 'none';
+    }
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                showThankYouMessage();
+            } else {
+                throw new Error('Error al enviar el formulario');
+            }
+        })
+        .catch(error => {
+            alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+        });
+    });
+});
